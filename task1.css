@@ -1,0 +1,58 @@
+/* Basic reset for the page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 255, 0.7), rgba(0, 128, 255, 0.7));
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .navbar.scrolled {
+    background: linear-gradient(90deg, rgba(0, 0, 255, 1), rgba(0, 128, 255, 1));
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #FFD700; /* Change to gold on hover */
+  }
+  
+  /* Style for the content to create scrolling */
+  .content {
+    padding: 100px 20px;
+    line-height: 1.6;
+    font-size: 18px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
